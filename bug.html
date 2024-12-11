@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Attempting to access a non-existent element
+    let element = document.getElementByIdx('myDiv'); //Typo in the method name
+    if (element) {
+      element.innerHTML = "<p>This text is added dynamically</p>";
+    }
+  </script>
+</body>
+</html>
