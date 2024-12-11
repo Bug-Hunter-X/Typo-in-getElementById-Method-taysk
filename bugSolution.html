@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Correct method for accessing an element
+    let element = document.getElementById('myDiv'); 
+    if (element) {
+      element.innerHTML = "<p>This text is added dynamically</p>";
+    }
+  </script>
+</body>
+</html>
